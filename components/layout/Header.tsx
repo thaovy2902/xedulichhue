@@ -103,24 +103,27 @@ function HamburgerIcon({ isOpen }: { isOpen: boolean }) {
 
 function ThemeToggle() {
   const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme()
+  // Use the resolved theme: on first visit `theme` is 'system', which is
+  // neither 'light' nor 'dark', so comparing it would show the wrong icon.
+  const { resolvedTheme, setTheme } = useTheme()
+  const isDark = resolvedTheme === 'dark'
 
   useEffect(() => setMounted(true), [])
   if (!mounted) return <div className="w-9 h-9" /> // size placeholder prevents layout shift
 
   return (
     <button
-      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+      onClick={() => setTheme(isDark ? 'light' : 'dark')}
       className={cn(
         'flex h-9 w-9 items-center justify-center rounded-lg',
         'text-muted-foreground transition-colors',
         'hover:bg-muted hover:text-foreground',
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2'
       )}
-      aria-label={theme === 'dark' ? 'Chuyển chế độ sáng' : 'Chuyển chế độ tối'}
+      aria-label={isDark ? 'Chuyển chế độ sáng' : 'Chuyển chế độ tối'}
     >
       <AnimatePresence mode="wait" initial={false}>
-        {theme === 'dark' ? (
+        {isDark ? (
           <motion.span
             key="sun"
             initial={{ rotate: -90, opacity: 0 }}
