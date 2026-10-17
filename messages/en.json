@@ -1,0 +1,287 @@
+{
+  "nav": {
+    "pricing": "Pricing",
+    "services": "Services",
+    "process": "Process",
+    "reviews": "Reviews",
+    "contact": "Contact",
+    "callNow": "Call Now"
+  },
+  "footer": {
+    "description": "Professional Hue tourism transport - airport transfers, city tours, and vehicle rental with a modern fleet at competitive prices.",
+    "contactHeading": "Contact Info",
+    "groups": {
+      "services": "Services"
+    },
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Opening hours",
+    "hoursValue": "24/7, including holidays",
+    "mapTitle": "Map of Hue Tourism Transport location",
+    "openMap": "Get directions on Google Maps"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "terms": "Terms",
+    "privacy": "Privacy Policy"
+  },
+  "whyUs": {
+    "badge": "Why Choose Us",
+    "heading1": "Hue car hire:",
+    "heading2": "Transparent, fair prices, always on time, friendly support.",
+    "subtitle": "Bringing passengers the greatest peace of mind and comfort",
+    "features": {
+      "vehicle": {
+        "title": "New, clean vehicles",
+        "desc": "Every vehicle is regularly serviced with fresh, clean interiors for a comfortable ride on every journey."
+      },
+      "onTime": {
+        "title": "On time, right place",
+        "desc": "Punctual pickups at the exact location, no detours - saving you time with complete safety."
+      },
+      "price": {
+        "title": "Fair pricing",
+        "desc": "Transparent rates that scale with distance - plus round-trip discounts for returning customers."
+      },
+      "support": {
+        "title": "24/7 support",
+        "desc": "A friendly, responsive support team - always ready to help you, any time, anywhere."
+      }
+    }
+  },
+  "process": {
+    "badge": "How It Works",
+    "title": "Book in 4 Simple Steps",
+    "subtitle": "Quick and easy - book your ride in minutes and we'll take care of the rest.",
+    "step": "Step",
+    "step1": {
+      "title": "Contact Us",
+      "desc": "Call, message on Zalo, or fill in the <form>booking form</form>. We <b>respond immediately</b>."
+    },
+    "step2": {
+      "title": "Confirm Your Itinerary",
+      "desc": "We confirm the route, timing, and <b>exact fare within 5 minutes</b>."
+    },
+    "step3": {
+      "title": "Driver Confirms Pickup",
+      "desc": "Your driver <b>calls 30 minutes before pickup</b> to make sure it is the <b>right place, right passenger</b>."
+    },
+    "step4": {
+      "title": "Depart",
+      "desc": "Sit back and enjoy a <b>safe, comfortable</b> ride in our modern fleet."
+    }
+  },
+  "services": {
+    "badge": "Services",
+    "title": "Featured Services",
+    "subtitle": "From airport transfers and city tours to long-term rentals - we cover every transportation need with professionalism and care.",
+    "cta": "Call to Book",
+    "items": {
+      "san_bay_phu_bai_hue": {
+        "title": "Phu Bai Airport Transfer",
+        "feature0": "4-seat car: 160,000 VND",
+        "feature1": "7-seat car: 210,000 VND",
+        "feature2": "16-seat van: 450,000 VND"
+      },
+      "tour_langco": {
+        "title": "Hue – Lang Co",
+        "feature0": "4-seat car: 750,000 VND",
+        "feature1": "7-seat car: 850,000 VND"
+      },
+      "tour_hue": {
+        "title": "Hue City Tour",
+        "feature0": "4-seat car: 900,000 VND",
+        "feature1": "7-seat car: 1,000,000 VND"
+      },
+      "tour_lavang": {
+        "title": "Hue – La Vang",
+        "feature0": "4-seat car: 700,000 VND",
+        "feature1": "7-seat car: 900,000 VND"
+      },
+      "tour_danang": {
+        "title": "Hue – Da Nang",
+        "feature0": "4-seat car: 1,200,000 VND",
+        "feature1": "7-seat car: 1,400,000 VND"
+      },
+      "tour_hoian": {
+        "title": "Hue – Hoi An",
+        "feature0": "4-seat car: 1,300,000 VND",
+        "feature1": "7-seat car: 1,500,000 VND"
+      },
+      "tour_laguna": {
+        "title": "Hue – Laguna Resort",
+        "feature0": "4-seat car: 550,000 VND",
+        "feature1": "7-seat car: 700,000 VND"
+      },
+      "tour_vedana": {
+        "title": "Hue – Vedana Resort",
+        "feature0": "4-seat car: 450,000 VND",
+        "feature1": "7-seat car: 600,000 VND"
+      },
+      "tour_phongnha": {
+        "title": "Hue - Phong Nha Kẻ Bàng National Park",
+        "feature0": "4-seat car: 450,000 VND",
+        "feature1": "7-seat car: 600,000 VND"
+      }
+    }
+  },
+  "pricing": {
+    "badge": "Pricing",
+    "title": "Vehicle Pricing",
+    "subtitle": "Long-distance fare rates",
+    "highlight": "All-inclusive price: airport parking entry and exit fees INCLUDED.",
+    "col": {
+      "route": "Route",
+      "car4": "4-Seat",
+      "car7": "7-Seat",
+      "car16": "16-Seat"
+    },
+    "search": "Search routes...",
+    "popular": "Popular",
+    "empty": "No routes found.",
+    "note": "* Listed prices are one-way and exclude toll fees. Please contact us for an exact quote."
+  },
+  "languageSwitcher": {
+    "label": "Language",
+    "vi": "Tiếng Việt",
+    "en": "English"
+  },
+  "hero": {
+    "badge": "Bookings 24/7",
+    "title": "Hue Tourism Vehicles",
+    "seats": "4, 7 & 16 Seats",
+    "route1": "Hue Airport ⇄ Hue City",
+    "route2": "Hue City Sightseeing Tours",
+    "route3": "Hue to Other Provinces",
+    "description": "Professional tourism transportation in Hue with a modern, luxurious fleet of 4 to 16 seats. We specialize in airport transfers, city sightseeing tours, and charter services - offering competitive pricing, guaranteed safety, and punctual on-time performance.",
+    "cta": {
+      "primary": "Contact Us",
+      "secondary": "View Pricing"
+    },
+    "floating": {
+      "support": "24/7 Support",
+      "price": "Best Price",
+      "vehicle": "New Fleet",
+      "competitive": "Competitive Rates",
+      "team": "Professional Team"
+    },
+    "imageAlt": "Modern and luxurious Hue tourism vehicle fleet"
+  },
+  "faq": {
+    "q1": {
+      "question": "How much does a Phu Bai Airport transfer cost?",
+      "answer": "A 4-seat car starts from 150,000 VND, a 7-seat car from 250,000 VND, and a 16-seat van from 550,000 VND for the Phu Bai Airport ⇄ Hue City Centre route. All prices are all-inclusive with no hidden fees."
+    },
+    "q2": {
+      "question": "How do I book a Hue tourism vehicle?",
+      "answer": "You can book via phone call, Zalo, or SMS. We respond immediately, confirm the itinerary and exact fare within 5 minutes."
+    },
+    "q3": {
+      "question": "Is the Hue transport service available 24/7?",
+      "answer": "Yes. We operate 24/7 including public holidays. Our hotline and Zalo support are always available at any time."
+    },
+    "q4": {
+      "question": "What vehicle types do you offer?",
+      "answer": "We operate a fleet of new 4-seat, 7-seat, and 16-seat vehicles with clean interiors and good air conditioning, regularly serviced for absolute safety."
+    },
+    "q5": {
+      "question": "How much does a Hue to Da Nang transfer cost?",
+      "answer": "A 4-seat car from Hue to Da Nang starts from 350,000 VND, a 7-seat car from 600,000 VND, and a 16-seat van from 1,200,000 VND. One-way price, toll fees not included."
+    },
+    "q6": {
+      "question": "Will the driver pick me up at my location?",
+      "answer": "Yes. Drivers pick up at your exact location - hotel, home, or office. For airport transfers, the driver calls to confirm 30 minutes before pickup."
+    }
+  },
+  "metadata": {
+    "titleTemplate": "%s | {siteName}",
+    "home": {
+      "title": "Hue Tourism Transport | Phu Bai Airport Transfers & Hue City Tours",
+      "description": "Professional Hue tourism transport: Phu Bai airport transfers, Hue city sightseeing tours, Hue to Da Nang & Hoi An trips. 4, 7 & 16-seat vehicles. Competitive rates, on-time, 24/7 support. Call now: 077.246.7711."
+    }
+  },
+  "payment": {
+    "title": "Payment Methods",
+    "items": {
+      "cash": {
+        "title": "Cash",
+        "desc": "Visit www.taxidulichhue.io.vn and enter your phone number and address, and we will call you back within minutes."
+      },
+      "transfer": {
+        "title": "Bank transfer or card",
+        "desc": "Pay by bank transfer to one of our designated company accounts, or by bank card."
+      },
+      "office": {
+        "title": "At our office",
+        "desc": "Visit our office at: <map>40 Ngo Quyen, Thuan Hoa Ward, Hue City</map>."
+      },
+      "postpaid": {
+        "title": "Pay later",
+        "desc": "Available only to individuals and businesses with a contract with us."
+      }
+    },
+    "badge": "Flexible payment"
+  },
+  "testimonials": {
+    "badge": "Reviews",
+    "title": "What Our Customers Say",
+    "subtitle": "Real feedback from travellers who rode with us around Hue and beyond.",
+    "customer": "Customer",
+    "more": "See more reviews on Google Maps"
+  },
+  "booking": {
+    "badge": "Book online",
+    "title": "Book your ride in 1 minute",
+    "subtitle": "Leave your trip details and we will get back to you right away to confirm the itinerary and an all-inclusive fare.",
+    "perks": {
+      "fast": "Reply within minutes, even after hours",
+      "fixed": "All-inclusive quote, no surprises",
+      "anytime": "Bookings 24/7, including holidays"
+    },
+    "preferCall": "In a hurry? Call",
+    "contactHint": "Enter a phone number or an email, at least one.",
+    "fields": {
+      "phone": "Phone / Zalo / WhatsApp",
+      "email": "Email",
+      "contactVia": "Contact via",
+      "pickup": "Pickup location",
+      "dropoff": "Destination",
+      "datetime": "Pickup date & time",
+      "vehicle": "Vehicle",
+      "note": "Notes"
+    },
+    "placeholders": {
+      "pickup": "e.g. Phu Bai Airport",
+      "dropoff": "e.g. Hotel in Hue city centre",
+      "note": "Flight number, luggage, round trip..."
+    },
+    "contactVia": {
+      "any": "Any",
+      "call": "Phone call"
+    },
+    "vehicle": {
+      "any": "Not sure",
+      "car4": "4 seats",
+      "car7": "7 seats",
+      "car16": "16 seats"
+    },
+    "privacy": "Your details are only used to contact you about this trip.",
+    "submit": "Book now",
+    "submitting": "Sending...",
+    "success": {
+      "title": "Booking request received!",
+      "desc": "Thank you. We will contact you within a few minutes to confirm the itinerary and fare. In a hurry? Call us now:",
+      "again": "Send another request"
+    },
+    "errors": {
+      "required": "Please fill in this field.",
+      "contactRequired": "Please enter a phone number or an email.",
+      "invalidEmail": "Please enter a valid email.",
+      "invalidPhone": "Please enter a valid phone number.",
+      "rateLimited": "Too many requests. Please try again in a few minutes or call us directly.",
+      "sendFailed": "We could not send your request. Please try again or call +84 77 246 7711."
+    }
+  }
+}

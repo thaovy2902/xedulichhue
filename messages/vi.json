@@ -1,0 +1,287 @@
+{
+  "nav": {
+    "pricing": "Bảng giá xe",
+    "services": "Dịch vụ",
+    "process": "Quy trình",
+    "reviews": "Đánh giá",
+    "contact": "Liên hệ",
+    "callNow": "Gọi ngay"
+  },
+  "footer": {
+    "description": "Xe du lịch Huế chuyên nghiệp - đưa đón sân bay, tour tham quan và cho thuê xe với đội xe hiện đại, giá cạnh tranh.",
+    "contactHeading": "Thông tin liên hệ",
+    "groups": {
+      "services": "Dịch vụ"
+    },
+    "address": "Địa chỉ",
+    "phone": "Điện thoại",
+    "email": "Email",
+    "hours": "Giờ hoạt động",
+    "hoursValue": "24/7, kể cả lễ Tết",
+    "mapTitle": "Bản đồ vị trí Xe Du Lịch Huế",
+    "openMap": "Xem đường đi trên Google Maps"
+  },
+  "common": {
+    "loading": "Đang tải...",
+    "error": "Có lỗi xảy ra",
+    "terms": "Điều khoản",
+    "privacy": "Chính sách bảo mật"
+  },
+  "whyUs": {
+    "badge": "Vì Sao Chọn Chúng Tôi",
+    "heading1": "Thuê xe du lịch Huế:",
+    "heading2": "Giá cả minh bạch, hợp lý, luôn đúng giờ, hỗ trợ nhiệt tình.",
+    "subtitle": "Mang đến sự an tâm và thoải mái nhất cho hành khách",
+    "features": {
+      "vehicle": {
+        "title": "Xe đời mới, sạch sẽ",
+        "desc": "Toàn bộ xe được bảo dưỡng định kỳ, nội thất thơm sạch, mang lại cảm giác thoải mái trên mọi hành trình."
+      },
+      "onTime": {
+        "title": "Đúng giờ, đúng điểm hẹn",
+        "desc": "Đón khách đúng hẹn, đúng vị trí, không đường vòng - tiết kiệm thời gian, an toàn tuyệt đối."
+      },
+      "price": {
+        "title": "Giá cả hợp lý",
+        "desc": "Bảng giá minh bạch, linh hoạt theo quãng đường - nhiều ưu đãi khứ hồi cho khách hàng thân thiết."
+      },
+      "support": {
+        "title": "Hỗ trợ 24/7",
+        "desc": "Đội ngũ tư vấn nhiệt tình, hỗ trợ nhanh chóng - luôn sẵn sàng phục vụ bạn mọi lúc, mọi nơi."
+      }
+    }
+  },
+  "process": {
+    "badge": "Quy Trình",
+    "title": "Đặt xe chỉ với 4 bước",
+    "subtitle": "Đơn giản, nhanh chóng - đặt xe trong vài phút và chúng tôi lo phần còn lại.",
+    "step": "Bước",
+    "step1": {
+      "title": "Liên hệ",
+      "desc": "Gọi điện, nhắn Zalo hoặc <form>điền form đặt xe</form>. Chúng tôi <b>phản hồi ngay lập tức</b>."
+    },
+    "step2": {
+      "title": "Xác nhận lịch trình",
+      "desc": "Chúng tôi xác nhận tuyến đường, thời gian và <b>báo giá chính xác trong vòng 5 phút</b>."
+    },
+    "step3": {
+      "title": "Tài xế liên hệ trước",
+      "desc": "Tài xế <b>gọi xác nhận 30 phút trước giờ đón</b>, đảm bảo <b>đúng địa điểm, đúng người</b>."
+    },
+    "step4": {
+      "title": "Khởi hành",
+      "desc": "Lên xe và tận hưởng chuyến đi <b>an toàn, thoải mái</b> cùng đội xe đời mới của chúng tôi."
+    }
+  },
+  "services": {
+    "badge": "Dịch Vụ",
+    "title": "Dịch vụ nổi bật",
+    "subtitle": "Đa dạng lựa chọn - từ đưa đón sân bay, tour tham quan đến cho thuê xe dài hạn, chúng tôi đáp ứng mọi nhu cầu di chuyển của bạn.",
+    "cta": "Bấm gọi đặt xe",
+    "items": {
+      "san_bay_phu_bai_hue": {
+        "title": "Đưa đón sân bay Phú Bài",
+        "feature0": "Xe 4 chỗ: 160.000 VNĐ",
+        "feature1": "Xe 7 chỗ: 210.000 VNĐ",
+        "feature2": "Xe 16 chỗ: 450.000 VNĐ"
+      },
+      "tour_langco": {
+        "title": "Xe Huế - Lăng Cô",
+        "feature0": "Xe 4 chỗ : 750.000 VNĐ",
+        "feature1": "Xe 7 chỗ : 850.000 VNĐ"
+      },
+      "tour_hue": {
+        "title": "Đặt Tour Huế",
+        "feature0": "Xe 4 chỗ : 900.000 VNĐ",
+        "feature1": "Xe 7 chỗ : 1.000.000 VNĐ"
+      },
+      "tour_lavang": {
+        "title": "Xe Huế - La Vang",
+        "feature0": "Xe 4 chỗ : 700.000 VNĐ",
+        "feature1": "Xe 7 chỗ : 900.000 VNĐ"
+      },
+      "tour_danang": {
+        "title": "Xe Huế - Đà Nẵng",
+        "feature0": "Xe 4 chỗ : 1.200.000 VNĐ",
+        "feature1": "Xe 7 chỗ : 1.400.000 VNĐ"
+      },
+      "tour_hoian": {
+        "title": "Xe Huế - Hội An",
+        "feature0": "Xe 4 chỗ : 1.300.000 VNĐ",
+        "feature1": "Xe 7 chỗ : 1.500.000 VNĐ"
+      },
+      "tour_laguna": {
+        "title": "Xe Huế - Laguna Resort",
+        "feature0": "Xe 4 chỗ : 550.000 VNĐ",
+        "feature1": "Xe 7 chỗ : 700.000 VNĐ"
+      },
+      "tour_vedana": {
+        "title": "Xe Huế - Vedana Resort",
+        "feature0": "Xe 4 chỗ : 450.000 VNĐ",
+        "feature1": "Xe 7 chỗ : 600.000 VNĐ"
+      },
+      "tour_phongnha": {
+        "title": "Xe Huế - Phong Nha Kẻ Bàng",
+        "feature0": "Xe 4 chỗ : 450.000 VNĐ",
+        "feature1": "Xe 7 chỗ : 600.000 VNĐ"
+      }
+    }
+  },
+  "pricing": {
+    "badge": "Bảng Giá",
+    "title": "Bảng giá xe",
+    "subtitle": "Giá cước các tuyến đường dài",
+    "highlight": "Giá trọn gói, đã BAO GỒM phí ra, vào bãi đỗ sân bay.",
+    "col": {
+      "route": "Lịch trình",
+      "car4": "Xe 4 chỗ",
+      "car7": "Xe 7 chỗ",
+      "car16": "Xe 16 chỗ"
+    },
+    "search": "Tìm kiếm lịch trình...",
+    "popular": "Phổ biến",
+    "empty": "Không tìm thấy lịch trình phù hợp.",
+    "note": "* Giá niêm yết là giá 1 chiều, chưa bao gồm phí cao tốc. Vui lòng liên hệ để được báo giá chính xác."
+  },
+  "languageSwitcher": {
+    "label": "Ngôn ngữ",
+    "vi": "Tiếng Việt",
+    "en": "English"
+  },
+  "hero": {
+    "badge": "Nhận đặt xe 24/7",
+    "title": "Xe Du Lịch Huế",
+    "seats": "4,7,16 Chỗ",
+    "route1": "Sân bay Huế ⇄ Thành phố Huế",
+    "route2": "Xe Tour tham quan Huế",
+    "route3": "Xe từ Huế đi các tỉnh",
+    "description": "Dịch vụ xe du lịch Huế chuyên nghiệp với đội xe hiện đại, sang trọng từ 4 đến 16 chỗ. Chúng tôi phục vụ đưa đón sân bay, tổ chức tour tham quan danh thắng Huế và cho thuê xe theo chuyến với mức giá cạnh tranh - cam kết an toàn, đúng giờ và dịch vụ chu đáo.",
+    "cta": {
+      "primary": "Liên hệ ngay",
+      "secondary": "Xem bảng giá"
+    },
+    "floating": {
+      "support": "Hỗ trợ 24/7",
+      "price": "Giá tốt",
+      "vehicle": "Xe mới",
+      "competitive": "Giá cạnh tranh",
+      "team": "Đội ngũ chuyên nghiệp"
+    },
+    "imageAlt": "Đội xe du lịch Huế hiện đại và sang trọng"
+  },
+  "faq": {
+    "q1": {
+      "question": "Giá xe đưa đón sân bay Phú Bài bao nhiêu?",
+      "answer": "Giá xe 4 chỗ từ 150.000đ, xe 7 chỗ từ 250.000đ, xe 16 chỗ từ 550.000đ cho tuyến Sân bay Phú Bài ⇄ Trung tâm Huế. Tất cả giá đã bao gồm VAT, không phát sinh thêm."
+    },
+    "q2": {
+      "question": "Làm thế nào để đặt xe du lịch Huế?",
+      "answer": "Bạn có thể đặt xe qua điện thoại, nhắn tin Zalo hoặc SMS. Chúng tôi phản hồi ngay lập tức, xác nhận lịch trình và giá trong vòng 5 phút."
+    },
+    "q3": {
+      "question": "Xe du lịch Huế có phục vụ 24/7 không?",
+      "answer": "Có. Chúng tôi phục vụ 24/7 kể cả ngày lễ, Tết. Tổng đài và Zalo luôn sẵn sàng hỗ trợ bất kỳ thời điểm nào."
+    },
+    "q4": {
+      "question": "Xe Du Lịch Huế 4,7,16 Chỗ có những loại xe nào?",
+      "answer": "Chúng tôi có đội xe 4 chỗ, 7 chỗ và 16 chỗ đời mới, nội thất sạch sẽ, điều hòa tốt. Xe được bảo dưỡng định kỳ đảm bảo an toàn tuyệt đối."
+    },
+    "q5": {
+      "question": "Xe Huế đi Đà Nẵng giá bao nhiêu?",
+      "answer": "Xe 4 chỗ Huế - Đà Nẵng từ 350.000đ, xe 7 chỗ từ 600.000đ, xe 16 chỗ từ 1.200.000đ. Giá một chiều, chưa bao gồm phí cao tốc."
+    },
+    "q6": {
+      "question": "Tài xế có đón tận nơi không?",
+      "answer": "Có. Tài xế đón tận địa điểm khách yêu cầu - khách sạn, nhà ở, văn phòng. Với đưa đón sân bay, tài xế gọi xác nhận 30 phút trước giờ đón."
+    }
+  },
+  "metadata": {
+    "titleTemplate": "%s | {siteName}",
+    "home": {
+      "title": "Xe Du Lịch Huế 4,7,16 Chỗ | Đưa Đón Sân Bay Phú Bài, Tour Tham Quan Huế",
+      "description": "Dịch vụ xe du lịch Huế chuyên nghiệp: đưa đón sân bay Phú Bài, tour tham quan Cố đô Huế, xe đi Đà Nẵng – Hội An và các tỉnh. Xe 4, 7, 16 chỗ. Giá cạnh tranh, đúng giờ, hỗ trợ 24/7. Gọi ngay: 077.246.7711."
+    }
+  },
+  "payment": {
+    "title": "Các hình thức thanh toán",
+    "items": {
+      "cash": {
+        "title": "Tiền mặt",
+        "desc": "Truy cập www.taxidulichhue.io.vn và nhập số điện thoại và địa chỉ của quý khách, chúng tôi sẽ liên lạc lại ngay trong ít phút."
+      },
+      "transfer": {
+        "title": "Chuyển khoản hoặc quẹt thẻ",
+        "desc": "Quý khách có thể thanh toán bằng cách chuyển khoản vào một trong các tài khoản do công ty chỉ định hoặc quẹt thẻ ngân hàng."
+      },
+      "office": {
+        "title": "Trực tiếp tại văn phòng",
+        "desc": "Quý khách vui lòng đến văn phòng công ty tại địa chỉ: <map>40 Ngô Quyền, phường Thuận Hóa, thành phố Huế</map>."
+      },
+      "postpaid": {
+        "title": "Trả sau",
+        "desc": "Chỉ áp dụng cho những cá nhân, doanh nghiệp có hợp đồng với chúng tôi."
+      }
+    },
+    "badge": "Thanh toán linh hoạt"
+  },
+  "testimonials": {
+    "badge": "Đánh giá",
+    "title": "Phản hồi của khách hàng",
+    "subtitle": "Những chia sẻ thật từ khách hàng đã đi xe du lịch Huế cùng chúng tôi.",
+    "customer": "Khách hàng",
+    "more": "Xem thêm đánh giá trên Google Maps"
+  },
+  "booking": {
+    "badge": "Đặt xe online",
+    "title": "Đặt xe nhanh trong 1 phút",
+    "subtitle": "Để lại thông tin chuyến đi, chúng tôi sẽ liên hệ lại ngay để xác nhận lịch trình và báo giá trọn gói.",
+    "perks": {
+      "fast": "Phản hồi trong vài phút, kể cả ngoài giờ",
+      "fixed": "Báo giá trọn gói, không phát sinh",
+      "anytime": "Nhận đặt xe 24/7, kể cả lễ Tết"
+    },
+    "preferCall": "Cần gấp? Gọi ngay",
+    "contactHint": "Nhập SĐT hoặc email, ít nhất 1 trong 2.",
+    "fields": {
+      "phone": "SĐT / Zalo / WhatsApp",
+      "email": "Email",
+      "contactVia": "Liên hệ qua",
+      "pickup": "Điểm đón",
+      "dropoff": "Điểm đến",
+      "datetime": "Ngày giờ đón",
+      "vehicle": "Loại xe",
+      "note": "Ghi chú"
+    },
+    "placeholders": {
+      "pickup": "VD: Sân bay Phú Bài",
+      "dropoff": "VD: Khách sạn ở trung tâm Huế",
+      "note": "Số chuyến bay, hành lý, đi khứ hồi..."
+    },
+    "contactVia": {
+      "any": "Bất kỳ",
+      "call": "Gọi điện"
+    },
+    "vehicle": {
+      "any": "Chưa chắc",
+      "car4": "4 chỗ",
+      "car7": "7 chỗ",
+      "car16": "16 chỗ"
+    },
+    "privacy": "Thông tin của bạn chỉ dùng để liên hệ về chuyến đi này.",
+    "submit": "Đặt xe",
+    "submitting": "Đang gửi...",
+    "success": {
+      "title": "Đã nhận yêu cầu đặt xe!",
+      "desc": "Cảm ơn bạn. Chúng tôi sẽ liên hệ lại trong ít phút để xác nhận lịch trình và báo giá. Cần gấp, bạn có thể gọi ngay:",
+      "again": "Gửi yêu cầu khác"
+    },
+    "errors": {
+      "required": "Vui lòng nhập thông tin này.",
+      "contactRequired": "Vui lòng nhập số điện thoại hoặc email.",
+      "invalidEmail": "Email chưa đúng định dạng.",
+      "invalidPhone": "Số điện thoại chưa đúng định dạng.",
+      "rateLimited": "Bạn đã gửi quá nhiều yêu cầu. Vui lòng thử lại sau ít phút hoặc gọi trực tiếp cho chúng tôi.",
+      "sendFailed": "Chưa gửi được yêu cầu. Vui lòng thử lại hoặc gọi trực tiếp 077.246.7711."
+    }
+  }
+}
