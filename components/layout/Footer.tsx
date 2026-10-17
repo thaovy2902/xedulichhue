@@ -115,7 +115,7 @@ export async function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-white/10! py-6 text-center">
-          <p className="text-xs text-white/65">Copyright &copy; 2025 by XEDULICHHUE</p>
+          <p className="text-xs text-white/65">Copyright &copy; 2026 by XEDULICHHUE</p>
         </div>
       </Container>
     </footer>

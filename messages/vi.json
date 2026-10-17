@@ -122,8 +122,8 @@
       },
       "tour_phongnha": {
         "title": "Xe Huế - Phong Nha Kẻ Bàng",
-        "feature0": "Xe 4 chỗ : 450.000 VNĐ",
-        "feature1": "Xe 7 chỗ : 600.000 VNĐ"
+        "feature0": "Xe 4 chỗ : 2.500.000 VNĐ",
+        "feature1": "Xe 7 chỗ : 3.000.000 VNĐ"
       }
     }
   },
@@ -135,13 +135,11 @@
     "col": {
       "route": "Lịch trình",
       "car4": "Xe 4 chỗ",
-      "car7": "Xe 7 chỗ",
-      "car16": "Xe 16 chỗ"
+      "car7": "Xe 7 chỗ"
     },
     "search": "Tìm kiếm lịch trình...",
     "popular": "Phổ biến",
-    "empty": "Không tìm thấy lịch trình phù hợp.",
-    "note": "* Giá niêm yết là giá 1 chiều, chưa bao gồm phí cao tốc. Vui lòng liên hệ để được báo giá chính xác."
+    "empty": "Không tìm thấy lịch trình phù hợp."
   },
   "languageSwitcher": {
     "label": "Ngôn ngữ",
@@ -172,7 +170,7 @@
   "faq": {
     "q1": {
       "question": "Giá xe đưa đón sân bay Phú Bài bao nhiêu?",
-      "answer": "Giá xe 4 chỗ từ 150.000đ, xe 7 chỗ từ 250.000đ, xe 16 chỗ từ 550.000đ cho tuyến Sân bay Phú Bài ⇄ Trung tâm Huế. Tất cả giá đã bao gồm VAT, không phát sinh thêm."
+      "answer": "Tuyến Sân bay Phú Bài ⇄ Trung tâm Huế: xe 4 chỗ 160.000đ, xe 7 chỗ 210.000đ. Giá trọn gói, đã bao gồm phí ra vào bãi đỗ sân bay. Xe 16 chỗ vui lòng liên hệ để được báo giá."
     },
     "q2": {
       "question": "Làm thế nào để đặt xe du lịch Huế?",
@@ -188,7 +186,7 @@
     },
     "q5": {
       "question": "Xe Huế đi Đà Nẵng giá bao nhiêu?",
-      "answer": "Xe 4 chỗ Huế - Đà Nẵng từ 350.000đ, xe 7 chỗ từ 600.000đ, xe 16 chỗ từ 1.200.000đ. Giá một chiều, chưa bao gồm phí cao tốc."
+      "answer": "Xe 4 chỗ Huế - Đà Nẵng 1.200.000đ, xe 7 chỗ 1.400.000đ. Giá một chiều, chưa bao gồm phí cao tốc. Xe 16 chỗ vui lòng liên hệ để được báo giá."
     },
     "q6": {
       "question": "Tài xế có đón tận nơi không?",

@@ -18,8 +18,9 @@ import {
 } from 'framer-motion'
 import { Sun, Moon, Phone, CarFront } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import type { NavItem } from '@/types'
 import { siteConfig, PHONE_TEL } from '@/lib/site'
-import { Link } from '@/i18n/navigation'
+import { Link, usePathname } from '@/i18n/navigation'
 import { Button } from '@/components/ui/button'
 import { Container } from '@/components/ui/container'
 import { LanguageSwitcher } from './LanguageSwitcher'
@@ -165,7 +166,7 @@ function NavLink({ href, isActive, children, onClick }: NavLinkProps) {
   const isAnchor = href.startsWith('#')
 
   const className = cn(
-    'relative px-3 py-2 text-sm font-medium rounded-md',
+    'relative whitespace-nowrap px-2.5 xl:px-3 py-2 text-sm font-medium rounded-md',
     'transition-colors duration-200 outline-none',
     'focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2',
     isActive
@@ -207,10 +208,11 @@ interface MobileDrawerProps {
   isOpen: boolean
   onClose: () => void
   activeSection: string
+  items: NavItem[]
   t: ReturnType<typeof useTranslations>
 }
 
-function MobileDrawer({ isOpen, onClose, activeSection, t }: MobileDrawerProps) {
+function MobileDrawer({ isOpen, onClose, activeSection, items, t }: MobileDrawerProps) {
   const drawerRef = useRef<HTMLDivElement>(null)
   const callHref = siteConfig.contact.phone
     ? PHONE_TEL
@@ -276,7 +278,7 @@ function MobileDrawer({ isOpen, onClose, activeSection, t }: MobileDrawerProps) 
             {/* Drawer header */}
             <div className="flex items-center justify-between px-5 py-4 border-b border-border">
               {/* Logo */}
-              <a
+              <Link
                 href="/"
                 onClick={onClose}
                 className="flex items-center gap-2.5 font-bold text-foreground"
@@ -285,7 +287,7 @@ function MobileDrawer({ isOpen, onClose, activeSection, t }: MobileDrawerProps) 
                   <CarFront className="h-4 w-4 text-white" aria-hidden="true" />
                 </span>
                 <span className="text-base uppercase">{siteConfig.name}</span>
-              </a>
+              </Link>
 
               {/* Close button */}
               <button
@@ -310,7 +312,7 @@ function MobileDrawer({ isOpen, onClose, activeSection, t }: MobileDrawerProps) 
                 aria-label="Mobile navigation"
               >
                 <ul className="flex flex-col gap-1" role="list">
-                  {siteConfig.nav.map((item) => {
+                  {items.map((item) => {
                     const isActive = activeSection === item.href
                     const isAnchor = item.href.startsWith('#')
                     const linkClass = cn(
@@ -404,6 +406,15 @@ export function Header() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
   const [isScrolled, setIsScrolled]     = useState(false)
   const [activeSection, setActiveSection] = useState('')
+  const pathname = usePathname()
+  const isHome = pathname === '/'
+
+  // Section anchors only exist on the home page; elsewhere they must link
+  // back to it ("/#pricing") instead of scrolling the current page.
+  const navItems: NavItem[] = siteConfig.nav.map((item) =>
+    !isHome && item.href.startsWith('#') ? { ...item, href: `/${item.href}` } : item,
+  )
+  const activeHref = pathname.startsWith('/blog') ? '/blog' : isHome ? activeSection : ''
   const t = useTranslations('nav')
 
   const callHref = siteConfig.contact.phone
@@ -455,7 +466,7 @@ export function Header() {
   // ── Close drawer on resize to desktop ───────────────────────────────────
   useEffect(() => {
     const onResize = () => {
-      if (window.innerWidth >= 768) setIsDrawerOpen(false)
+      if (window.innerWidth >= 1024) setIsDrawerOpen(false)
     }
     window.addEventListener('resize', onResize)
     return () => window.removeEventListener('resize', onResize)
@@ -488,7 +499,7 @@ export function Header() {
           <div className="flex h-16 items-center justify-between gap-4">
 
             {/* ── Logo ──────────────────────────────────────────────── */}
-            <a
+            <Link
               href="/"
               className="flex shrink-0 items-center gap-2.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-lg"
               aria-label={`${siteConfig.name} - trang chủ`}
@@ -499,18 +510,18 @@ export function Header() {
               <span className="text-base font-bold tracking-tight uppercase text-foreground">
                 {siteConfig.name}
               </span>
-            </a>
+            </Link>
 
             {/* ── Desktop nav (center) ───────────────────────────────── */}
             <nav
-              className="hidden md:flex items-center gap-0.5"
+              className="hidden lg:flex items-center gap-0.5"
               aria-label="Main navigation"
             >
-              {siteConfig.nav.map((item) => (
+              {navItems.map((item) => (
                 <NavLink
                   key={item.key}
                   href={item.href}
-                  isActive={activeSection === item.href}
+                  isActive={activeHref === item.href}
                 >
                   {t(item.key as Parameters<typeof t>[0])}
                 </NavLink>
@@ -518,7 +529,7 @@ export function Header() {
             </nav>
 
             {/* ── Desktop actions (right) ────────────────────────────── */}
-            <div className="hidden md:flex items-center gap-1 shrink-0">
+            <div className="hidden lg:flex items-center gap-1 shrink-0">
               <LanguageSwitcher variant="dropdown" />
               <ThemeToggle />
               <div className="ml-2">
@@ -539,7 +550,7 @@ export function Header() {
             </div>
 
             {/* ── Mobile actions ─────────────────────────────────────── */}
-            <div className="flex md:hidden items-center gap-1 shrink-0">
+            <div className="flex lg:hidden items-center gap-1 shrink-0">
               <ThemeToggle />
               <button
                 onClick={() => setIsDrawerOpen((prev) => !prev)}
@@ -565,7 +576,8 @@ export function Header() {
       <MobileDrawer
         isOpen={isDrawerOpen}
         onClose={closeDrawer}
-        activeSection={activeSection}
+        activeSection={activeHref}
+        items={navItems}
         t={t}
       />
     </>

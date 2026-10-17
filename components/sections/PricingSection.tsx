@@ -100,31 +100,25 @@ export function PricingSection() {
 
         {/* ── Table ─────────────────────────────────────────────────────── */}
         <motion.div variants={fadeUp}>
-          {/*
-            Outer: overflow-hidden + rounded corners clip visual edges.
-            Inner: overflow-auto + max-h creates the scroll container - sticky
-            thead will stick to the TOP of this scroll container.
-          */}
+          {/* Outer: overflow-hidden + rounded corners clip visual edges. Full height, no inner scroll. */}
           <div className="rounded-2xl border border-border shadow-card overflow-hidden">
-            <div className="overflow-x-auto overflow-y-auto max-h-[540px]">
-              <table className="w-full min-w-[560px] border-collapse">
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse">
 
-                {/* ─ Sticky header ─────────────────────────────────────── */}
+                {/* ─ Header ─────────────────────────────────────── */}
                 <thead>
                   <tr>
                     {[
                       { key: 'route', align: 'left'  },
                       { key: 'car4',  align: 'right' },
                       { key: 'car7',  align: 'right' },
-                      { key: 'car16', align: 'right' },
                     ].map((col, i) => (
                       <th
                         key={col.key}
                         scope="col"
                         className={cn(
-                          'sticky top-0 z-10',
                           'bg-primary text-primary-foreground',
-                          'px-5 py-3.5 text-sm font-semibold whitespace-nowrap',
+                          'px-3 sm:px-5 py-3.5 text-sm font-semibold whitespace-nowrap',
                           'border-b border-primary-800',
                           col.align === 'right' ? 'text-right' : 'text-left',
                           i === 0 && 'rounded-tl-none', // handled by outer wrapper
@@ -141,7 +135,7 @@ export function PricingSection() {
                   {filtered.length === 0 ? (
                     <tr>
                       <td
-                        colSpan={4}
+                        colSpan={3}
                         className="py-12 text-center text-sm text-muted-foreground"
                       >
                         {t('empty')}
@@ -160,7 +154,7 @@ export function PricingSection() {
                         )}
                       >
                         {/* Route */}
-                        <td className="px-5 py-3.5 text-sm font-medium text-foreground">
+                        <td className="px-3 sm:px-5 py-3.5 text-sm font-medium text-foreground">
                           <span className="flex flex-wrap items-center gap-x-2.5 gap-y-1">
                             <span>{row.route}</span>
                             {row.popular && (
@@ -172,14 +166,11 @@ export function PricingSection() {
                         </td>
 
                         {/* Prices */}
-                        <td className="px-5 py-3.5 text-sm font-semibold text-right text-primary tabular-nums">
+                        <td className="px-3 sm:px-5 py-3.5 text-sm font-semibold text-right text-primary tabular-nums whitespace-nowrap">
                           {row.car4}
                         </td>
-                        <td className="px-5 py-3.5 text-sm font-semibold text-right text-foreground tabular-nums">
+                        <td className="px-3 sm:px-5 py-3.5 text-sm font-semibold text-right text-foreground tabular-nums whitespace-nowrap">
                           {row.car7}
-                        </td>
-                        <td className="px-5 py-3.5 text-sm font-semibold text-right text-foreground tabular-nums">
-                          {row.car16}
                         </td>
                       </tr>
                     ))
@@ -189,10 +180,6 @@ export function PricingSection() {
             </div>
           </div>
 
-          {/* Footer note */}
-          <p className="mt-3 text-center text-xs text-muted-foreground">
-            {t('note')}
-          </p>
         </motion.div>
 
         </motion.div>{/* end stagger */}

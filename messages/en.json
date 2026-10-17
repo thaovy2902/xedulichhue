@@ -122,8 +122,8 @@
       },
       "tour_phongnha": {
         "title": "Hue - Phong Nha Kẻ Bàng National Park",
-        "feature0": "4-seat car: 450,000 VND",
-        "feature1": "7-seat car: 600,000 VND"
+        "feature0": "4-seat car: 2.500.000 VND",
+        "feature1": "7-seat car: 3.000.000 VND"
       }
     }
   },
@@ -135,13 +135,11 @@
     "col": {
       "route": "Route",
       "car4": "4-Seat",
-      "car7": "7-Seat",
-      "car16": "16-Seat"
+      "car7": "7-Seat"
     },
     "search": "Search routes...",
     "popular": "Popular",
-    "empty": "No routes found.",
-    "note": "* Listed prices are one-way and exclude toll fees. Please contact us for an exact quote."
+    "empty": "No routes found."
   },
   "languageSwitcher": {
     "label": "Language",
@@ -172,7 +170,7 @@
   "faq": {
     "q1": {
       "question": "How much does a Phu Bai Airport transfer cost?",
-      "answer": "A 4-seat car starts from 150,000 VND, a 7-seat car from 250,000 VND, and a 16-seat van from 550,000 VND for the Phu Bai Airport ⇄ Hue City Centre route. All prices are all-inclusive with no hidden fees."
+      "answer": "Phu Bai Airport ⇄ Hue City Centre: 160,000 VND for a 4-seat car and 210,000 VND for a 7-seat car. All-inclusive, airport parking fees included. Please contact us for a 16-seat van quote."
     },
     "q2": {
       "question": "How do I book a Hue tourism vehicle?",
@@ -188,7 +186,7 @@
     },
     "q5": {
       "question": "How much does a Hue to Da Nang transfer cost?",
-      "answer": "A 4-seat car from Hue to Da Nang starts from 350,000 VND, a 7-seat car from 600,000 VND, and a 16-seat van from 1,200,000 VND. One-way price, toll fees not included."
+      "answer": "Hue to Da Nang costs 1,200,000 VND in a 4-seat car and 1,400,000 VND in a 7-seat car. One-way price, toll fees not included. Please contact us for a 16-seat van quote."
     },
     "q6": {
       "question": "Will the driver pick me up at my location?",
