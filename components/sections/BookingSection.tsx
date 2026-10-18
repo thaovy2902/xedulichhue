@@ -1,6 +1,6 @@
 'use client'
 
-import { useActionState, useState, type ReactNode } from 'react'
+import { useActionState, useEffect, useState, type ReactNode } from 'react'
 import { useLocale, useTranslations } from 'next-intl'
 import { CheckCircle2, Clock, Mail, Phone, ShieldCheck, Zap } from 'lucide-react'
 import { submitBooking, type BookingField, type BookingState } from '@/app/actions/booking'
@@ -9,6 +9,7 @@ import { SectionHeading } from '@/components/ui/section-heading'
 import { Button } from '@/components/ui/button'
 import { siteConfig, PHONE_TEL } from '@/lib/site'
 import { cn } from '@/lib/utils'
+import { trackConversion } from '@/lib/analytics'
 
 const INITIAL_STATE: BookingState = { status: 'idle' }
 
@@ -200,6 +201,9 @@ function Field({ label, children, required, error, icon, className }: FieldProps
 }
 
 function SuccessPanel({ title, desc, again, onAgain }: { title: string; desc: string; again: string; onAgain: () => void }) {
+  // Shown once per successful submission - report it as a booking conversion
+  useEffect(() => trackConversion('booking'), [])
+
   return (
     <div role="status" className="flex flex-col items-center text-center py-10">
       <CheckCircle2 className="h-14 w-14 text-success" aria-hidden="true" />

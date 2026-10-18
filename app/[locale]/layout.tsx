@@ -13,6 +13,7 @@ import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { FloatingContact } from '@/components/ui/FloatingContact'
 import { JsonLd } from '@/components/seo/JsonLd'
+import { GoogleTag } from '@/components/analytics/GoogleTag'
 import { routing } from '@/i18n/routing'
 import { siteConfig } from '@/lib/site'
 import '../globals.css'
@@ -131,6 +132,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             <FloatingContact />
           </ThemeProvider>
         </NextIntlClientProvider>
+        <GoogleTag />
       </body>
     </html>
   )
