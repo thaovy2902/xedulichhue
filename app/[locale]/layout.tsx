@@ -1,5 +1,11 @@
+/**
+ * Root layout (under the [locale] segment, so <html lang> comes straight
+ * from the route param). Not reading request headers keeps every page
+ * statically pre-rendered at build time.
+ */
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import { Be_Vietnam_Pro } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
 import { setRequestLocale } from 'next-intl/server'
 import { ThemeProvider } from '@/components/providers/ThemeProvider'
@@ -9,6 +15,14 @@ import { FloatingContact } from '@/components/ui/FloatingContact'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { routing } from '@/i18n/routing'
 import { siteConfig } from '@/lib/site'
+import '../globals.css'
+
+const fontSans = Be_Vietnam_Pro({
+  variable: '--font-be-vietnam-pro',
+  subsets: ['latin', 'vietnamese'],
+  weight: ['400', '500', '600', '700'],
+  display: 'swap',
+})
 
 type Props = {
   children: React.ReactNode
@@ -33,6 +47,8 @@ export async function generateMetadata({ params }: Omit<Props, 'children'>): Pro
     : 'Professional Hue tourism transport: Phu Bai airport transfers, Hue city tours, and inter-provincial trips. 4, 7 & 16-seat vehicles. Competitive rates, on-time, 24/7 support.'
 
   return {
+    metadataBase: new URL(siteConfig.url),
+    robots: { index: true, follow: true },
     title: {
       default: siteConfig.name,
       template: `%s | ${siteConfig.name}`,
@@ -73,9 +89,10 @@ export async function generateMetadata({ params }: Omit<Props, 'children'>): Pro
       description,
       images: siteConfig.ogImage ? [{ url: siteConfig.ogImage, alt: siteConfig.name }] : [],
     },
-    verification: {
-      google: '',  // fill in Google Search Console verification token
-    },
+    // Google Search Console token (HTML-tag method), set on Vercel
+    ...(process.env.GOOGLE_SITE_VERIFICATION && {
+      verification: { google: process.env.GOOGLE_SITE_VERIFICATION },
+    }),
   }
 }
 
@@ -91,16 +108,30 @@ export default async function LocaleLayout({ children, params }: Props) {
   setRequestLocale(locale)
 
   return (
-    // NextIntlClientProvider reads messages & locale from server context
-    // automatically when rendered from a Server Component - no props needed.
-    <NextIntlClientProvider>
-      <JsonLd locale={locale} />
-      <ThemeProvider defaultTheme="system" enableSystem disableTransitionOnChange>
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <FloatingContact />
-      </ThemeProvider>
-    </NextIntlClientProvider>
+    <html lang={locale} suppressHydrationWarning className={fontSans.variable}>
+      {/*
+        FOUC prevention: runs before first paint, reads localStorage and
+        applies the correct dark/light class to <html> immediately.
+      */}
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('theme')||'system';if(t==='system')t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.classList.add(t)}catch(e){}})()`,
+          }}
+        />
+      </head>
+      <body className="min-h-screen flex flex-col antialiased">
+        {/* NextIntlClientProvider reads messages & locale from server context */}
+        <NextIntlClientProvider>
+          <JsonLd locale={locale} />
+          <ThemeProvider defaultTheme="system" enableSystem disableTransitionOnChange>
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+            <FloatingContact />
+          </ThemeProvider>
+        </NextIntlClientProvider>
+      </body>
+    </html>
   )
 }

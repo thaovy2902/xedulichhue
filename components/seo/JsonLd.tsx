@@ -1,5 +1,4 @@
-import { getTranslations } from 'next-intl/server'
-import { siteConfig } from '@/lib/site'
+import { siteConfig, MAP_REVIEWS_URL } from '@/lib/site'
 
 interface JsonLdProps {
   locale: string
@@ -29,12 +28,14 @@ function buildLocalBusiness(locale: string) {
       postalCode: '530000',
       addressCountry: 'VN',
     },
+    image: `${siteConfig.url}${siteConfig.ogImage}`,
+    logo: `${siteConfig.url}/favicon.ico`,
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 16.4637,
-      longitude: 107.5909,
+      latitude: 16.4599502,
+      longitude: 107.5869156,
     },
-    hasMap: 'https://maps.google.com/?q=16.4637,107.5909',
+    hasMap: MAP_REVIEWS_URL,
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: [
@@ -106,23 +107,6 @@ function buildLocalBusiness(locale: string) {
   }
 }
 
-// ─── FAQ Schema ────────────────────────────────────────────────────────────
-
-function buildFaqPage(faqs: { question: string; answer: string }[]) {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqs.map(({ question, answer }) => ({
-      '@type': 'Question',
-      name: question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: answer,
-      },
-    })),
-  }
-}
-
 // ─── WebSite Schema ────────────────────────────────────────────────────────
 
 function buildWebSite(locale: string) {
@@ -139,20 +123,8 @@ function buildWebSite(locale: string) {
 
 // ─── Component ─────────────────────────────────────────────────────────────
 
-export async function JsonLd({ locale }: JsonLdProps) {
-  const t = await getTranslations({ locale, namespace: 'faq' })
-
-  const faqKeys = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6'] as const
-  const faqs = faqKeys.map((key) => ({
-    question: t(`${key}.question` as Parameters<typeof t>[0]),
-    answer: t(`${key}.answer` as Parameters<typeof t>[0]),
-  }))
-
-  const schemas = [
-    buildWebSite(locale),
-    buildLocalBusiness(locale),
-    buildFaqPage(faqs),
-  ]
+export function JsonLd({ locale }: JsonLdProps) {
+  const schemas = [buildWebSite(locale), buildLocalBusiness(locale)]
 
   return (
     <>
