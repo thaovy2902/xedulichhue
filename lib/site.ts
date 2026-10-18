@@ -3,7 +3,7 @@ import type { SiteConfig } from '@/types'
 export const siteConfig: SiteConfig = {
   name: 'Xe Du Lịch Huế 4,7,16 Chỗ',
   description: 'Xe du lịch Huế chuyên nghiệp - đưa đón sân bay, tour tham quan và cho thuê xe.',
-  url: 'https://transvoy.vn',
+  url: 'https://thuexedulichhue.io.vn',
   ogImage: '/og-image.jpg',
   contact: {
     email: 'taxidulichhue@gmail.com',
